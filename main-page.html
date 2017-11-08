@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programming Thesises</title>
+  <link
+    href="css/w3-v4.04.css"
+    rel="stylesheet">
+  <link
+    href="css/styles.css"
+    rel="stylesheet">
+  <script src="js/common/base.js"></script>
+  <script src="js/common/thesises.js"></script>
+  <script src="js/libs/jquery-3.2.1.js"></script>
+</head>
+<body onload="init()">
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:20%">
+  <a href="#" class="w3-bar-item w3-button" onclick="loadThesis('summation')">Summation</a> 
+</div>
+
+<div style="margin-left:20%">
+
+<div class="w3-container">
+  <button class="w3-button w3-block w3-blue" onclick="runThesis()">Run</button></p>
+  <textarea
+    id="textareaCode"
+    class="noResize"
+    wrap="off">
+  </textarea>
+</div>
+      
+</body>
+</html>
