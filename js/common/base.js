@@ -11,7 +11,6 @@ function setTextareaDimensions() {
   var textareaWidth = window.innerWidth * 0.80  - offsetWidth;
   
   var $textareaCode = $("#textareaCode");
-  var $textareaOutput = $("#textareaOutput");
   
   $textareaCode.height(textareaHeight);
   $textareaCode.width(textareaWidth);

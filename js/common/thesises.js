@@ -2,17 +2,31 @@
 
 var summation = "var numbers = [1,2,3,4,5,6,7,8,9,10];"+
                 "\n"+
-                "\nvar summation = 0;"+
+                "\nvar sum = 0;"+
                 "\n"+
                 "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
-                "\n  summation += numbers[i];"+
+                "\n  sum += numbers[i];"+
                 "\n}"+
                 "\n"+
-                "\nalert(summation);";
+                "\nalert(sum);";
+                
+var counting  =  "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
+                "\n"+
+                "\nvar counter = 0;"+
+                "\nvar limit = 5;"+
+                "\n"+
+                "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                "\n  if(numbers[i] > limit){"+
+                "\n    counter++;"+
+                "\n  }"+
+                "\n}"+
+                "\n"+
+                "\nalert(counter);";
           
 function loadThesis(code){
   switch(code){
     case 'summation' : $("#textareaCode").val(summation); break;
+    case 'counting' : $("#textareaCode").val(counting); break;
   }
 }
 
