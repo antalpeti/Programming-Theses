@@ -10,7 +10,7 @@ var summation = "var numbers = [1,2,3,4,5,6,7,8,9,10];"+
                 "\n"+
                 "\nalert(sum);";
                 
-var counting  =  "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
+var counting  = "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
                 "\n"+
                 "\nvar counter = 0;"+
                 "\nvar limit = 5;"+
@@ -22,11 +22,30 @@ var counting  =  "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
                 "\n}"+
                 "\n"+
                 "\nalert(counter);";
+                
+var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
+                "\n"+
+                "\nvar target = 11;"+
+                "\n"+
+                "\nvar i = 0;"+
+                "\n"+
+                "\nvar numbersLength = numbers.length"+
+                "\nwhile(i  < numbersLength && numbers[i] !== target){"+
+                "\n  i++;"+
+                "\n}"+
+                "\n"+
+                "\nif(i < numbersLength){"+
+                "\n  alert('Target found!')"+
+                "\n} else {"+
+                "\n  alert('Target not found!')"+
+                "\n}"+
+                "\nalert(counter);";
           
 function loadThesis(code){
   switch(code){
     case 'summation' : $("#textareaCode").val(summation); break;
     case 'counting' : $("#textareaCode").val(counting); break;
+    case 'decision' : $("#textareaCode").val(decision); break;
   }
 }
 
