@@ -39,6 +39,7 @@ var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n} else {"+
                 "\n  alert('Target not found!')"+
                 "\n}"+
+                "\n"+
                 "\nalert(counter);";
           
 function loadThesis(code){
