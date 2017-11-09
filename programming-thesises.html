@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Programming Thesises</title>
+  <title>Programming Theses</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link
     href="css/w3-v4.04.css"
@@ -11,17 +11,20 @@
     href="css/styles.css"
     rel="stylesheet">
   <script src="js/common/base.js"></script>
-  <script src="js/common/thesises.js"></script>
+  <script src="js/common/thesis.js"></script>
   <script src="js/libs/jquery-3.2.1.js"></script>
 </head>
 <body onload="init()">
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:20%">
-  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('summation')">Summation</a> 
-  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('counting')">Counting</a> 
-  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('decision')">Decision</a> 
-  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('selection')">Selection</a> 
-  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('search')">Search</a> 
+<input id="inputFilter" type="text" class="w3-input w3-border w3-large" onkeyup="filterList()" placeholder="Search for thesis.." title="Type in some filter">
+<ul id="ulThesis" class="w3-ul w3-hoverable">
+  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('summation')">Summation</a></li>
+  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('counting')">Counting</a></li>
+  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('decision')">Decision</a></li>
+  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('selection')">Selection</a></li>
+  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('search')">Search</a></li>
+</ul>
 </div>
 
 <div style="margin-left:20%">
