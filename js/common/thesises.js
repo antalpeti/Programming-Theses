@@ -35,18 +35,37 @@ var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n}"+
                 "\n"+
                 "\nif(i < numbersLength){"+
-                "\n  alert('Target found!')"+
+                "\n  alert('Target found!');"+
                 "\n} else {"+
-                "\n  alert('Target not found!')"+
+                "\n  alert('Target not found!');"+
                 "\n}"+
                 "\n"+
                 "\nalert(counter);";
+                
+var selection = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
+                "\n"+
+                "\nvar target = 7;"+
+                "\n"+
+                "\nvar i = 0;"+
+                "\n"+
+                "\nvar numbersLength = numbers.length"+
+                "\nwhile(i  < numbersLength && numbers[i] !== target){"+
+                "\n  i++;"+
+                "\n}"+
+                "\n"+
+                "\nvar serialNumber = i + 1;"+
+                "\nif(serialNumber <= numbersLength){"+
+                "\n  alert(serialNumber);"+
+                "\n} else {"+
+                "\n  alert(-1);"+
+                "\n}";
           
 function loadThesis(thesisName){
   switch(thesisName){
     case 'summation' : loadTextarea(summation); break;
     case 'counting' : loadTextarea(counting); break;
     case 'decision' : loadTextarea(decision); break;
+    case 'selection' : loadTextarea(selection); break;
   }
 }
 
