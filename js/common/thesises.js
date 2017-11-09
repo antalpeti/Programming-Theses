@@ -53,15 +53,33 @@ var selection = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n  i++;"+
                 "\n}"+
                 "\n"+
-                "\nvar serialNumber = (i < numbersLength) ? i + 1 : -1;"+
-                "\nalert(serialNumber);";
-          
+                "\nvar lineNumber = (i < numbersLength) ? i + 1 : -1;"+
+                "\nalert(lineNumber);";
+                
+var search    = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
+                "\n"+
+                "\nvar target = 17;"+
+                "\n"+
+                "\nvar i = 0;"+
+                "\n"+
+                "\nvar numbersLength = numbers.length"+
+                "\nwhile(i  < numbersLength && numbers[i] !== target){"+
+                "\n  i++;"+
+                "\n}"+
+                "\n"+
+                "\nif(i < numbersLength){"+
+                "\n  alert('Target found! ' + (i + 1));"+
+                "\n} else {"+
+                "\n  alert('Target not found!');"+
+                "\n}";
+                
 function loadThesis(thesisName){
   switch(thesisName){
     case 'summation' : loadTextarea(summation); break;
     case 'counting' : loadTextarea(counting); break;
     case 'decision' : loadTextarea(decision); break;
     case 'selection' : loadTextarea(selection); break;
+    case 'search' : loadTextarea(search); break;
   }
 }
 
