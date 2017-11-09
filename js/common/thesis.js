@@ -73,6 +73,20 @@ var search    = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                 "\n  alert('Target not found!');"+
                 "\n}";
                 
+var assortment  = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
+                  "\nvar assortedNumbers = [];"+
+                  "\nvar target = 11;"+
+                  "\n"+
+                  "\nvar j = 0;"+
+                  "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                  "\n  if(numbers[i] > target){"+
+                  "\n    assortedNumbers[j++] = numbers[i];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Original array: ' + numbers);"+
+                  "\nalert('Assorted array: ' + assortedNumbers);";
+                
 function loadThesis(thesisName){
   switch(thesisName){
     case 'summation' : loadTextarea(summation); break;
@@ -80,6 +94,7 @@ function loadThesis(thesisName){
     case 'decision' : loadTextarea(decision); break;
     case 'selection' : loadTextarea(selection); break;
     case 'search' : loadTextarea(search); break;
+    case 'assortment' : loadTextarea(assortment); break;
   }
 }
 
