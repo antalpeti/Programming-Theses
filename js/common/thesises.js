@@ -53,12 +53,8 @@ var selection = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n  i++;"+
                 "\n}"+
                 "\n"+
-                "\nvar serialNumber = i + 1;"+
-                "\nif(serialNumber <= numbersLength){"+
-                "\n  alert(serialNumber);"+
-                "\n} else {"+
-                "\n  alert(-1);"+
-                "\n}";
+                "\nvar serialNumber = (i < numbersLength) ? i + 1 : -1;"+
+                "\nalert(serialNumber);";
           
 function loadThesis(thesisName){
   switch(thesisName){
