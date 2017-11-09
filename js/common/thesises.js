@@ -42,12 +42,16 @@ var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n"+
                 "\nalert(counter);";
           
-function loadThesis(code){
-  switch(code){
-    case 'summation' : $("#textareaCode").val(summation); break;
-    case 'counting' : $("#textareaCode").val(counting); break;
-    case 'decision' : $("#textareaCode").val(decision); break;
+function loadThesis(thesisName){
+  switch(thesisName){
+    case 'summation' : loadTextarea(summation); break;
+    case 'counting' : loadTextarea(counting); break;
+    case 'decision' : loadTextarea(decision); break;
   }
+}
+
+function loadTextarea(code){
+  $("#textareaCode").val(code); 
 }
 
 function runThesis(){

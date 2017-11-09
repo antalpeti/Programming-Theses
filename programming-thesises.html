@@ -3,6 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Programming Thesises</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link
     href="css/w3-v4.04.css"
     rel="stylesheet">
@@ -16,18 +17,18 @@
 <body onload="init()">
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:20%">
-  <a class="w3-bar-item w3-button" onclick="loadThesis('summation')">Summation</a> 
-  <a class="w3-bar-item w3-button" onclick="loadThesis('counting')">Counting</a> 
-  <a class="w3-bar-item w3-button" onclick="loadThesis('decision')">Decision</a> 
+  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('summation')">Summation</a> 
+  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('counting')">Counting</a> 
+  <a class="w3-bar-item w3-button w3-large" onclick="loadThesis('decision')">Decision</a> 
 </div>
 
 <div style="margin-left:20%">
 
 <div class="w3-container">
-  <button class="w3-button w3-block w3-blue" onclick="runThesis()">Run</button></p>
+  <button id="buttonRun" class="w3-button w3-block w3-blue w3-large" onclick="runThesis()">Run</button></p>
   <textarea
     id="textareaCode"
-    class="noResize"
+    class="noResize w3-large"
     wrap="off">
   </textarea>
 </div>
