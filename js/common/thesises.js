@@ -68,7 +68,7 @@ var search    = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                 "\n}"+
                 "\n"+
                 "\nif(i < numbersLength){"+
-                "\n  alert('Target found! ' + (i + 1));"+
+                "\n  alert('Target found! At line number: ' + (i + 1));"+
                 "\n} else {"+
                 "\n  alert('Target not found!');"+
                 "\n}";
