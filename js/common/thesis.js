@@ -84,8 +84,8 @@ var assortment  = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\n  }"+
                   "\n}"+
                   "\n"+
-                  "\nalert('Original array: ' + numbers);"+
-                  "\nalert('Assorted array: ' + assortedNumbers);";
+                  "\nalert('Original numbers: ' + numbers);"+
+                  "\nalert('Assorted numbers: ' + assortedNumbers);";
                 
 function loadThesis(thesisName){
   switch(thesisName){
