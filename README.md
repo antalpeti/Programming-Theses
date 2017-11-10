@@ -1,2 +1,2 @@
-# Programming-Thesises
-A bunch of programming thesises implemented in javascript.
+# Programming-Theses
+A bunch of programming theses implemented in javascript.
