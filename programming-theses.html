@@ -19,12 +19,12 @@
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:20%">
 <input id="inputFilter" type="text" class="w3-input w3-border w3-large" onkeyup="filterList()" placeholder="Search for thesis.." title="Type in some filter">
 <ul id="ulThesis" class="w3-ul w3-hoverable">
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('summation')">Summation</a></li>
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('counting')">Counting</a></li>
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('decision')">Decision</a></li>
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('selection')">Selection</a></li>
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('search')">Search</a></li>
-  <li><a class="w3-bar-item w3-button w3-large" onclick="loadThesis('assortment')">Assortment</a></li>
+  <li><a id="aSummation" class="w3-bar-item w3-button w3-large" onclick="loadThesis('summation')">Summation</a></li>
+  <li><a id="aCounting" class="w3-bar-item w3-button w3-large" onclick="loadThesis('counting')">Counting</a></li>
+  <li><a id="aDecision" class="w3-bar-item w3-button w3-large" onclick="loadThesis('decision')">Decision</a></li>
+  <li><a id="aSelection" class="w3-bar-item w3-button w3-large" onclick="loadThesis('selection')">Selection</a></li>
+  <li><a id="aSearch" class="w3-bar-item w3-button w3-large" onclick="loadThesis('search')">Search</a></li>
+  <li><a id="aAssortment" class="w3-bar-item w3-button w3-large" onclick="loadThesis('assortment')">Assortment</a></li>
 </ul>
 </div>
 
@@ -32,6 +32,10 @@
 
 <div class="w3-container">
   <button id="buttonRun" class="w3-button w3-block w3-blue w3-large" onclick="runThesis()">Run</button></p>
+  <div
+    id="divThesis"
+    class="w3-indigo w3-large">
+  </div>
   <textarea
     id="textareaCode"
     class="noResize w3-large"

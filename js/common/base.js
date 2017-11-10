@@ -5,9 +5,9 @@ function init(){
 }
 
 function setTextareaDimensions() {
-  var offsetHeight = 80;
+  var offsetHeight = 100;
   var textareaHeight = ((window.innerHeight - offsetHeight));
-  var offsetWidth = 40;
+  var offsetWidth = 38;
   
   var textareaWidth = window.innerWidth * 0.80  - offsetWidth;
   

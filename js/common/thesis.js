@@ -87,18 +87,22 @@ var assortment  = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\nalert('Original numbers: ' + numbers);"+
                   "\nalert('Assorted numbers: ' + assortedNumbers);";
                 
-function loadThesis(thesisName){
-  switch(thesisName){
-    case 'summation' : loadTextarea(summation); break;
-    case 'counting' : loadTextarea(counting); break;
-    case 'decision' : loadTextarea(decision); break;
-    case 'selection' : loadTextarea(selection); break;
-    case 'search' : loadTextarea(search); break;
-    case 'assortment' : loadTextarea(assortment); break;
+function loadThesis(thesisId){
+  switch(thesisId){
+    case 'summation' : loadThesisName('Summation'); loadThesisCode(summation); break;
+    case 'counting' : loadThesisName('Counting'); loadThesisCode(counting); break;
+    case 'decision' : loadThesisName('Decision'); loadThesisCode(decision); break;
+    case 'selection' : loadThesisName('Selection'); loadThesisCode(selection); break;
+    case 'search' : loadThesisName('Search'); loadThesisCode(search); break;
+    case 'assortment' : loadThesisName('Assortment'); loadThesisCode(assortment); break;
   }
 }
 
-function loadTextarea(code){
+function loadThesisName(thesisName){
+  $("#divThesis").html(thesisName + ':');
+}
+
+function loadThesisCode(code){
   $("#textareaCode").val(code); 
 }
 
