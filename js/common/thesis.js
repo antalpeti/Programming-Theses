@@ -8,7 +8,7 @@ var summation = "var numbers = [1,2,3,4,5,6,7,8,9,10];"+
                 "\n  sum += numbers[i];"+
                 "\n}"+
                 "\n"+
-                "\nalert(sum);";
+                "\nalert('Sum of the numbers: ' + sum);";
                 
 var counting  = "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
                 "\n"+
@@ -21,7 +21,7 @@ var counting  = "var numbers = [1,9,3,7,5,6,4,8,2,10];"+
                 "\n  }"+
                 "\n}"+
                 "\n"+
-                "\nalert(counter);";
+                "\nalert('Numbers above the limit: ' + counter);";
                 
 var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n"+
@@ -38,9 +38,7 @@ var decision  = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n  alert('Target found!');"+
                 "\n} else {"+
                 "\n  alert('Target not found!');"+
-                "\n}"+
-                "\n"+
-                "\nalert(counter);";
+                "\n}";
                 
 var selection = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n"+
@@ -54,7 +52,7 @@ var selection = "var numbers = [1,2,3,7,51,6,4,11,2,10];"+
                 "\n}"+
                 "\n"+
                 "\nvar lineNumber = (i < numbersLength) ? i + 1 : -1;"+
-                "\nalert(lineNumber);";
+                "\nalert('Target found at line number: ' + lineNumber);";
                 
 var search    = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                 "\n"+
@@ -75,17 +73,17 @@ var search    = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                 
 var assortment  = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\nvar assortedNumbers = [];"+
-                  "\nvar target = 11;"+
+                  "\nvar limit = 11;"+
                   "\n"+
                   "\nvar j = 0;"+
                   "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
-                  "\n  if(numbers[i] > target){"+
+                  "\n  if(numbers[i] > limit){"+
                   "\n    assortedNumbers[j++] = numbers[i];"+
                   "\n  }"+
                   "\n}"+
                   "\n"+
-                  "\nalert('Original numbers: ' + numbers);"+
-                  "\nalert('Assorted numbers: ' + assortedNumbers);";
+                  "\nalert('Original numbers: ' + numbers +"+
+                  "\n      '\\nAssorted numbers: ' + assortedNumbers);";
                 
 var separable  =  "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\nvar limit = 11;"+
