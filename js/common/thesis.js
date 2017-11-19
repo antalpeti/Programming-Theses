@@ -87,6 +87,27 @@ var assortment  = "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\nalert('Original numbers: ' + numbers);"+
                   "\nalert('Assorted numbers: ' + assortedNumbers);";
                 
+var separable  =  "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
+                  "\nvar limit = 11;"+
+                  "\n"+
+                  "\nvar numbersAboveTarget = [];"+
+                  "\nvar numbersBelowTarget = [];"+
+                  "\n"+
+                  "\nvar j = 0;"+
+                  "\nvar k = 0;"+
+                  "\n"+
+                  "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                  "\n  if(numbers[i] > limit){"+
+                  "\n    numbersAboveTarget[j++] = numbers[i];"+
+                  "\n  } else {"+
+                  "\n    numbersBelowTarget[k++] = numbers[i];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Original numbers: ' + numbers + " +
+                  "\n      '\\nNumbers above limit: ' + numbersAboveTarget + "+
+                  "\n      '\\nNumbers below or equal limit: ' + numbersBelowTarget);";
+
 function loadThesis(thesisId){
   switch(thesisId){
     case 'summation' : loadThesisName('Summation'); loadThesisCode(summation); break;
@@ -95,6 +116,7 @@ function loadThesis(thesisId){
     case 'selection' : loadThesisName('Selection'); loadThesisCode(selection); break;
     case 'search' : loadThesisName('Search'); loadThesisCode(search); break;
     case 'assortment' : loadThesisName('Assortment'); loadThesisCode(assortment); break;
+    case 'separable' : loadThesisName('Separable'); loadThesisCode(separable); break;
   }
 }
 
