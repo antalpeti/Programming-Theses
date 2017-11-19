@@ -117,6 +117,18 @@ var minimum     = "var numbers = [33,2,3,7,51,61,17,11,2,22];"+
                   "\n}"+
                   "\n"+
                   "\nalert('Minimum: ' + minimum);";
+                  
+var maximum     = "var numbers = [33,2,3,7,51,61,17,11,2,22];"+
+                  "\n"+
+                  "\nvar maximum = numbers[0];"+
+                  "\n"+
+                  "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                  "\n  if(numbers[i] > maximum){"+
+                  "\n    maximum = numbers[i];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Maximum: ' + maximum);";
 
 function loadThesis(thesisId){
   switch(thesisId){
@@ -128,6 +140,7 @@ function loadThesis(thesisId){
     case 'assortment' : loadThesisName('Assortment'); loadThesisCode(assortment); break;
     case 'separable' : loadThesisName('Separable'); loadThesisCode(separable); break;
     case 'minimum' : loadThesisName('Minimum'); loadThesisCode(minimum); break;
+    case 'maximum' : loadThesisName('Maximum'); loadThesisCode(maximum); break;
   }
 }
 
