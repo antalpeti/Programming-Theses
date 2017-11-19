@@ -105,6 +105,18 @@ var separable  =  "var numbers = [1,2,3,7,51,61,17,11,2,22];"+
                   "\nalert('Original numbers: ' + numbers + " +
                   "\n      '\\nNumbers above limit: ' + numbersAboveTarget + "+
                   "\n      '\\nNumbers below or equal limit: ' + numbersBelowTarget);";
+                  
+var minimum     = "var numbers = [33,2,3,7,51,61,17,11,2,22];"+
+                  "\n"+
+                  "\nvar minimum = numbers[0];"+
+                  "\n"+
+                  "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                  "\n  if(numbers[i] < minimum){"+
+                  "\n    minimum = numbers[i];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Minimum: ' + minimum);";
 
 function loadThesis(thesisId){
   switch(thesisId){
@@ -115,6 +127,7 @@ function loadThesis(thesisId){
     case 'search' : loadThesisName('Search'); loadThesisCode(search); break;
     case 'assortment' : loadThesisName('Assortment'); loadThesisCode(assortment); break;
     case 'separable' : loadThesisName('Separable'); loadThesisCode(separable); break;
+    case 'minimum' : loadThesisName('Minimum'); loadThesisCode(minimum); break;
   }
 }
 
