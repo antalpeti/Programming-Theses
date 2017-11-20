@@ -129,6 +129,28 @@ var maximum     = "var numbers = [33,2,3,7,51,61,17,11,2,22];"+
                   "\n}"+
                   "\n"+
                   "\nalert('Maximum: ' + maximum);";
+                  
+var engraving   = "var numbers =  [33,5,3,7,51,16,17,63,2,22];"+
+                  "\nvar numbers2 = [1,12,5,8,13,63,18,11,9,17];"+
+                  "\nvar length2 = numbers2.length;"+
+                  "\nvar engraving = [];"+
+                  "\n"+
+                  "\nvar j;"+
+                  "\nvar k = 0;"+
+                  "\n"+
+                  "\nfor(var i = 0, il = numbers.length; i < il; i++){"+
+                  "\n  j = 0;"+
+                  "\n  while(j < length2 && numbers2[j] != numbers[i]){"+
+                  "\n    j++;"+
+                  "\n  }"+
+                  "\n  if(j < length2){"+
+                  "\n    engraving[k++] = numbers[i];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Numbers: ' + numbers + "+
+                  "\n      '\\nNumbers2: ' + numbers2 + "+
+                  "\n      '\\nEngraving: ' + engraving)";
 
 function loadThesis(thesisId){
   switch(thesisId){
@@ -141,6 +163,7 @@ function loadThesis(thesisId){
     case 'separable' : loadThesisName('Separable'); loadThesisCode(separable); break;
     case 'minimum' : loadThesisName('Minimum'); loadThesisCode(minimum); break;
     case 'maximum' : loadThesisName('Maximum'); loadThesisCode(maximum); break;
+    case 'engraving' : loadThesisName('Engraving'); loadThesisCode(engraving); break;
   }
 }
 
