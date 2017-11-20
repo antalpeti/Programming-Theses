@@ -151,6 +151,31 @@ var engraving   = "var numbers =  [33,5,3,7,51,16,17,63,2,22];"+
                   "\nalert('Numbers: ' + numbers + "+
                   "\n      '\\nNumbers2: ' + numbers2 + "+
                   "\n      '\\nEngraving: ' + engraving)";
+                  
+var union       = "var numbers =  [33,5,3,7,51,16,17,63,2,22];"+
+                  "\nvar numbers2 = [1,12,5,8,13,63,18,11,9,17];"+
+                  "\nvar length = numbers.length;"+
+                  "\nvar length2 = numbers2.length;"+
+                  "\nvar union = [];"+
+                  "\n"+
+                  "\nfor(var i = 0; i < length; i++){"+
+                  "\n  union[i] = numbers[i];"+
+                  "\n}"+
+                  "\n"+
+                  "\nvar k = length;"+
+                  "\nfor(var j = 0; j < length2; j++){"+
+                  "\n  var i = 0;"+
+                  "\n  while(i < length && numbers[i] != numbers2[j]){"+
+                  "\n    i++;"+
+                  "\n  }"+
+                  "\n  if(i >= length){"+
+                  "\n    union[k++] = numbers2[j];"+
+                  "\n  }"+
+                  "\n}"+
+                  "\n"+
+                  "\nalert('Numbers: ' + numbers + "+
+                  "\n      '\\nNumbers2: ' + numbers2 + "+
+                  "\n      '\\nUnion: ' + union)";
 
 function loadThesis(thesisId){
   switch(thesisId){
@@ -164,6 +189,7 @@ function loadThesis(thesisId){
     case 'minimum' : loadThesisName('Minimum'); loadThesisCode(minimum); break;
     case 'maximum' : loadThesisName('Maximum'); loadThesisCode(maximum); break;
     case 'engraving' : loadThesisName('Engraving'); loadThesisCode(engraving); break;
+    case 'union' : loadThesisName('Union'); loadThesisCode(union); break;
   }
 }
 
